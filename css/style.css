@@ -1,0 +1,114 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  border: black solid 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+width: 100%;
+height: 100%;
+margin: auto;
+
+}
+
+h2, h3  {
+  text-align: center;
+}
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem
+}
+
+span, p {
+  font-size: 1.6rem;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, footer, section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header, footer {
+  background-color: white;
+}
+
+section {
+  min-height: 500px;
+}
+
+.card {
+  width: 25%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+button {
+  border: solid #0070ba 1px; 
+  border-radius: 3rem;
+  color:#0070ba;
+  font-size: 1.5rem;
+  font-weight: 700;
+  max-width: 320px;
+  padding: 13px 24px;
+}
+.top-section {
+  color: white;
+  background: url('../assets/top-section.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+ 
+
+.blue {
+  background-color: #0070ba; 
+  color: #ffffff;
+}
+
+.grey {
+  background-color: #f5f7fa;
+}
+
+.blue-backdrop {
+  background: rgb(0,154,220);
+  background: radial-gradient(circle, rgba(0,154,220,1) 0%, rgba(0,68,151,1) 77%);
+  color: #ffffff;
+}
+
+/* smaller
+@media (min-width:) {
+  h2{
+    font-size: 3rem;
+  }
+} */
