@@ -1,7 +1,7 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
-  border: black solid 2px;
+  /* border: black solid 2px; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
@@ -34,46 +34,19 @@ margin: auto;
 
 }
 
-h2, h3  {
-  text-align: center;
-}
 h2 {
   font-size: 4rem;
+  text-align: center;
 }
 
 h3 {
-  font-size: 2rem
+  font-size: 2rem;
 }
 
-span, p {
+span, p, i {
   font-size: 1.6rem;
 }
-/******************************************
-/* LAYOUT
-/*******************************************/
-header, footer, section {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-header, footer {
-  background-color: white;
-}
-
-section {
-  min-height: 500px;
-}
-
-.card {
-  width: 25%;
-}
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
 button {
   border: solid #0070ba 1px; 
   border-radius: 3rem;
@@ -81,23 +54,78 @@ button {
   font-size: 1.5rem;
   font-weight: 700;
   max-width: 320px;
-  padding: 13px 24px;
+  padding: 1.3rem 2.4rem;
 }
+
+header button {
+  font-size: 1.2rem;
+  padding: 1.1rem 1.8rem;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, footer, section {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  flex-direction: row;
+  padding: 0.5%;
+}
+
 .top-section {
   color: white;
   background: url('../assets/top-section.jpg');
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
+  min-height: 700px;
 }
  
+section {
+  min-height: 500px;
+  padding: 5%;
+}
+footer {
+  padding: 1%;
+}
+footer span {
+  font-size: 1.4rem;
+}
+ .footer-nav span, .footer-nav i {
+  padding: 1rem;
+  font-weight: 700;
+}
+.card {
+  width: 25%;
+}
 
+.columns {
+  column-count: 3;
+}
+
+.logo {
+  width: 10rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* COLOURS */
 .blue {
   background-color: #0070ba; 
   color: #ffffff;
 }
 
-.grey {
+.grey-backdrop {
   background-color: #f5f7fa;
+}
+
+.grey {
+  color: gray; 
 }
 
 .blue-backdrop {
@@ -106,9 +134,25 @@ button {
   color: #ffffff;
 }
 
-/* smaller
-@media (min-width:) {
+/* FONTS */
+.bold {
+  font-weight: 700;
+}
+
+/* smaller than 750px */
+@media (max-width: 750px) {
   h2{
     font-size: 3rem;
   }
+
+  .columns {
+     column-count: 1;
+  }
+
+  .top-section{
+    min-height: 400px;
+  }
+  /* .top-section h2 {
+  width: 100%;
 } */
+}
