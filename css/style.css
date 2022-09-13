@@ -45,6 +45,7 @@ h3 {
 
 span, p, i {
   font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 button {
@@ -57,9 +58,9 @@ button {
   padding: 1.3rem 2.4rem;
 }
 
-header button {
+header button, header span {
   font-size: 1.2rem;
-  padding: 1.1rem 1.8rem;
+  padding: 1.1% 1.8%;
 }
 /******************************************
 /* LAYOUT
@@ -76,6 +77,16 @@ header, footer, section {
 header {
   flex-direction: row;
   padding: 0.5%;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.show {
+  display: none;
+  align-items: center;
+}
+.show i {
+  margin-right: 5%;;
 }
 
 .top-section {
@@ -85,7 +96,9 @@ header {
   background-repeat: no-repeat;
   min-height: 700px;
 }
- 
+.top-section h2 {
+  width: 70%;
+}
 section {
   min-height: 500px;
   padding: 5%;
@@ -99,10 +112,12 @@ footer span {
  .footer-nav span, .footer-nav i {
   padding: 1rem;
   font-weight: 700;
+  cursor: pointer;
 }
 .card {
   width: fit-content;
   height: auto;
+  margin-top: 3rem;
 }
 
 .columns {
@@ -117,49 +132,61 @@ footer span {
 /* ADDITIONAL STYLES
 /*******************************************/
 /* COLOURS */
+/* for blue buttons */
 .blue {
   background-color: #0070ba; 
   color: #ffffff;
 }
 
+/* Section background colours */
 .grey-backdrop {
   background-color: #f5f7fa;
 }
-
-.grey {
-  color: gray; 
-}
-
 .blue-backdrop {
   background: rgb(0,154,220);
   background: radial-gradient(circle, rgba(0,154,220,1) 0%, rgba(0,68,151,1) 77%);
   color: #ffffff;
 }
 
-/* FONTS */
+/* FONT STYLES */
 .bold {
   font-weight: 700;
 }
 
+.grey {
+  color: gray; 
+}
+
 /* smaller than 750px */
 @media (max-width: 750px) {
+  .show {
+    display: flex;
+  }
+
+  .hide {
+    display:none;
+  }
   h2{
     font-size: 3rem;
   }
 
   .columns {
      column-count: 1;
+     column-gap: 7rem;
+     text-align: center;
   }
-
+  section {
+    min-height: auto;
+    padding: 10% 5%;
+  }
   .top-section{
-    min-height: 400px;
+    min-height: 350px;
   }
-
-  .card {
-    width: 25rem;
-   
-  }
-  /* .top-section h2 {
+ .top-section h2 {
   width: 100%;
-} */
+}
+  .vector .card {
+    width: 30rem;
+     }
+ 
 }
