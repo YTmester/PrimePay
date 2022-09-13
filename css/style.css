@@ -91,7 +91,7 @@ section {
   padding: 5%;
 }
 footer {
-  padding: 1%;
+  padding: 1.5%;
 }
 footer span {
   font-size: 1.4rem;
@@ -101,11 +101,13 @@ footer span {
   font-weight: 700;
 }
 .card {
-  width: 25%;
+  width: fit-content;
+  height: auto;
 }
 
 .columns {
   column-count: 3;
+  column-gap:2%;
 }
 
 .logo {
@@ -151,6 +153,11 @@ footer span {
 
   .top-section{
     min-height: 400px;
+  }
+
+  .card {
+    width: 25rem;
+   
   }
   /* .top-section h2 {
   width: 100%;
