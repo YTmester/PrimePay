@@ -1,1 +1,1 @@
-Web Design: A Responsive Layout for A Online Banking Website
+Web Design: A Responsive Layout for an Online Banking Website
