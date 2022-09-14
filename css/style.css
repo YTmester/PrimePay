@@ -61,6 +61,7 @@ button {
 header button {
   font-size: 1.2rem;
   padding: 1.1% 1.8%;
+  text-align: right;
 }
 header span {
   font-size: 1.4rem;
@@ -81,13 +82,21 @@ header, footer, section {
   justify-content: center;
 }
 header {
+  justify-content: space-between;
   flex-direction: row;
   padding: 0.5%;
-  justify-content: space-between;
   padding-left: 2%;
   padding-right: 2%;
   position:sticky;
   box-shadow:0px 5px 10px #aeb0b5;
+}
+.menu {
+  flex-basis: 60%;
+  text-align: center;
+}
+.menu span {
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .show {
   display: none;
