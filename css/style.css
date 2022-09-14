@@ -230,7 +230,10 @@ footer span {
   .vector .card {
     width: 30rem;
   }
- 
+ .blue-backdrop .card{
+    margin-top: 10%;
+    margin-bottom:10%;
+ }
 }
 
 @media (min-width: 870px) {
