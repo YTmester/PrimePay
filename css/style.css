@@ -238,3 +238,8 @@ footer span {
     flex-basis: 65%;  
   }
 }
+@media (min-width: 1070px) {
+  .menu {
+    flex-basis: 70%;  
+  }
+}
