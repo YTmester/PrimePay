@@ -108,7 +108,7 @@ header {
 
 .top-section {
   color: white;
-  background: url('../assets/top-section.jpg');
+  background: url('../assets/top-section2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 700px;
@@ -137,7 +137,6 @@ footer span {
   -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
           page-break-inside: avoid; /* Firefox */
                break-inside: avoid; /* IE 10+ */
-
 }
 .card img {
   width:70%;
@@ -145,7 +144,9 @@ footer span {
   margin: 0 auto;
 }
 
-
+.top-margin-none{
+  margin-top: 0
+}
 .columns {
   column-count: 3;
   column-gap:2%;  
