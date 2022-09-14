@@ -58,13 +58,19 @@ button {
   padding: 1.3rem 2.4rem;
 }
 
-header button, header span {
+header button {
   font-size: 1.2rem;
   padding: 1.1% 1.8%;
+}
+header span {
+  font-size: 1.4rem;
 }
 /******************************************
 /* LAYOUT
 /*******************************************/
+button, header span, .bold, .logo {
+  cursor: pointer;
+}
 header, footer, section {
   background-color: white;
   width: 100%;
@@ -80,6 +86,8 @@ header {
   justify-content: space-between;
   padding-left: 2%;
   padding-right: 2%;
+  position:sticky;
+  box-shadow:0px 5px 10px #aeb0b5;
 }
 .show {
   display: none;
@@ -112,22 +120,32 @@ footer span {
  .footer-nav span, .footer-nav i {
   padding: 1rem;
   font-weight: 700;
-  cursor: pointer;
 }
 .card {
   width: fit-content;
   height: auto;
   margin-top: 3rem;
+  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+          page-break-inside: avoid; /* Firefox */
+               break-inside: avoid; /* IE 10+ */
+
 }
+.card img {
+  width:70%;
+  display: block;
+  margin: 0 auto;
+}
+
 
 .columns {
   column-count: 3;
-  column-gap:2%;
+  column-gap:2%;  
 }
 
 .logo {
   width: 10rem;
 }
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
