@@ -39,7 +39,7 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h3, .fa-1, .fa-2, .fa-3  {
   font-size: 2rem;
 }
 
@@ -131,6 +131,7 @@ footer span {
   font-weight: 700;
 }
 .card {
+  border-radius: 1rem;
   width: fit-content;
   height: auto;
   margin-top: 3rem;
@@ -152,6 +153,15 @@ footer span {
   column-gap:2%;  
 }
 
+.numbers i, .numbers span, .numbers h3 {
+  display: block;
+  justify-content: center;
+  align-items: top;
+  text-align: center;
+}
+.numbers i, .numbers h3, .blue-backdrop h2 {
+  padding-bottom: 5%;
+}
 .logo {
   width: 10rem;
 }
@@ -167,6 +177,10 @@ footer span {
 }
 
 /* Section background colours */
+.grey-border {
+  border: gray solid 1px;
+}
+
 .grey-backdrop {
   background-color: #f5f7fa;
 }
@@ -215,6 +229,12 @@ footer span {
 }
   .vector .card {
     width: 30rem;
-     }
+  }
  
+}
+
+@media (min-width: 870px) {
+  .menu {
+    flex-basis: 65%;  
+  }
 }
